@@ -33,7 +33,7 @@ These responses are meant to provide guidance. The exact values can vary based o
 
 **Near match**
 
-    GET /suggestions?q=Londo&latitude=43.70011&longitude=-79.4163
+    GET https://coveo-backend-comagnan.herokuapp.com/suggestions?q=Qué&country=CA
 
 ```json
 {
@@ -43,24 +43,6 @@ These responses are meant to provide guidance. The exact values can vary based o
       "latitude": "42.98339",
       "longitude": "-81.23304",
       "score": 0.9
-    },
-    {
-      "name": "London, OH, USA",
-      "latitude": "39.88645",
-      "longitude": "-83.44825",
-      "score": 0.5
-    },
-    {
-      "name": "London, KY, USA",
-      "latitude": "37.12898",
-      "longitude": "-84.08326",
-      "score": 0.5
-    },
-    {
-      "name": "Londontowne, MD, USA",
-      "latitude": "38.93345",
-      "longitude": "-76.54941",
-      "score": 0.3
     }
   ]
 }
@@ -68,7 +50,7 @@ These responses are meant to provide guidance. The exact values can vary based o
 
 **No match**
 
-    GET /suggestions?q=SomeRandomCityInTheMiddleOfNowhere
+    GET https://coveo-backend-comagnan.herokuapp.com/suggestions?q=SOMERANDOMCITY
 
 ```json
 {
